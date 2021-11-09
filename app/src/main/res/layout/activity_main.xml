@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+   style="@style/layoutStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/calc"
+        style="@style/buttonStyle"
+
+        android:layout_width="287dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="96dp"
+        android:onClick="onClickcalculate"
+        android:text="calculate IBM"></Button>
+
+    <Button
+        android:id="@+id/timer"
+        style="@style/buttonStyle"
+
+        android:layout_width="286dp"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/calc"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="22dp"
+        android:onClick="onClickTimer"
+        android:text="Timer"></Button>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="371dp"
+        android:layout_height="333dp"
+        app:srcCompat="@drawable/fitt3" />
+
+
+</RelativeLayout>
